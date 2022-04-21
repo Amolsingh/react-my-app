@@ -13,7 +13,8 @@ const clickHandler = () => {
 }
 
  return (
-        <Card className='expense-item'>
+     <li>
+         <Card className='expense-item'>
             <ExpenseDate dte ={props.date}></ExpenseDate>
             <div className='expense-item__description'>
                  <h2>{title}</h2> 
@@ -21,6 +22,7 @@ const clickHandler = () => {
             </div>
             <button onClick={clickHandler}>Change Title</button>
         </Card>
+     </li>
     );
 }
 
